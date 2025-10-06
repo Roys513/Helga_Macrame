@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONTS -->
+    <link rel="stylesheet" href="../fonts/fontawesome-free-6.1.2-web/css/all.min.css">
+    <link rel="stylesheet" href="../fonts/fonts.css">
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/pages/catalogo-styles.css">
+    <!-- DOCUMENTOS JS -->
+    <script src="../js/script.js"></script>
+    <script src="../js/navbarFixed.js"></script>
+    <script src="../js/pages/catalogoContent.js"></script>
+
+    <title>HELGA | MACRAME</title>
+</head>
+<body>
+    <!-- LAYOUT PRINCIPAL -->
+    <div class="layout">
+        <!-- MENU -->
+        <section class="layout__header">
+            <header class="header__menu">
+                <!-- LOGO -->
+                <div class="header__logo">
+                    <a href="../../index.html" class="header__link-logo">
+                        <img src="../img/fr_17311.jpg" alt="imagen_logo" class="header__img">
+                    </a>
+                </div>
+                
+                <!-- NAVEGACION -->
+                <nav class="header-navbar">
+                    <ul class="navbar__list">
+                        <li class="navbar__title">
+                            <a href="../../index.html" class="navbar__link">Inicio</a>
+                        </li>
+                        <li class="navbar__title">
+                            <a href="./catalogo.html" class="navbar__link navbar__link--active">Productos</a>
+                        </li>
+                        <li class="navbar__title">
+                            <a href="./blog.html" class="navbar__link">Blog</a>
+                        </li>
+                        <li class="navbar__title">
+                            <a href="./contacto.html" class="navbar__link">Contacto</a>
+                        </li>
+                    </ul>
+
+                </nav>
+            </header>
+
+            <!-- BANNER -->
+            <div class="header__banner-catalog">
+                <div class="banner-catalog__container-img">
+                    <img src="../img/imagen-fondo-muestra-catalogo.jpg" alt="Imagen muestra catalogo" class="banner-catalog__img">
+                </div>
+                <h1 class="banner-catalog__title">Productos</h1>
+            </div>
+        </section>
+
+        <!-- CATALOGO -->
+        <section class="layout__catalog">
+            <div class="catalog__grid">
+                
+                <!-- BARRA MENU DE CATALOGO -->
+                <div class="catalog__menu">
+                    <div class="menu__container">
+                        <p class="menu__text-quantity"></p>
+
+                        <div class="menu__filter">
+                            <div class="menu__filter-dropdown">
+                                <i class="menu__filter-icon fa-solid fa-bars"></i>
+                                <span class="filter-dropdown__title">Filtro</span>
+                            </div>
+
+                            <ul class="filter-dropdown__list">
+                                <li class="filter-dropdown__option" id="FDOPrecioMasAlto">Precio: más bajo a más alto</li>
+                                <li class="filter-dropdown__option" id="FDOPrecioMasBajo">Precio: más alto a más bajo</li>
+                                <li class="filter-dropdown__option" id="FDOMasReciente">Lo más reciente</li>
+                                <li class="filter-dropdown__option" id="FDOMenosReciente">Lo más antiguo</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- CONTENIDO DE CATALOGO -->
+                <div class="catalog__content">
+                </div>
+                
+                <div class="content__item-detail">
+                </div>
+            </div>
+        </section>
+        
+        <!-- FOOTER -->
+        <footer class="layout__footer">
+            <div class="footer__container">
+                <div class="footer__footer-up">
+                    <div class="footer-up__phrase-container">
+                        <p class="footer-up__phrase-text">Gracias por apoyar lo hecho a mano</p>
+                    </div>
+
+                    <section class="footer-up__content">
+
+                        <section class="footer-up__contact">
+                            <div class="contact__contact-info">
+                                <h2 class="contact-info__name">Helga Macramé</h2>
+                                <span class="contact-info__email">helgamacrame@gmail.com</span>
+                            </div>
+                            
+                            <div class="contact__social">
+                                <a href="#" class="social__link">
+                                    <i class="social__instagram fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="#" class="social__link">
+                                    <i class="social__whatsapp fa-brands fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </section>
+                        
+                        <section class="footer-up__credits">
+                            <div class="credits__logo-container">
+                                <img src="../img/fr_17311.jpg" alt="Logo" class="credits__logo-img">
+                            </div>
+                            
+                            <div class="credits__location">
+                                <h2 class="location__prev">Productos elaborados en:</h2>
+                                <span class="location__content">San Pedro del Pinatar - Murcia <br> 30740</span>
+                            </div>
+                        </section>
+                    </section>
+                </div>
+                <div class="footer__footer-bottom">
+                    <span class="footer-bottom__copyright-text">
+                        &copy; 2025 Todos los derechos reservados a <a href="#">Roy Ortiz</a>
+                    </span>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

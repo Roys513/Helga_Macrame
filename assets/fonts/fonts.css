@@ -1,0 +1,32 @@
+@font-face{
+    font-family: "brusher";
+    src: url(./brusher/Brusher.ttf);
+    font-weight: 400;
+    font-size: normal;
+}
+
+@font-face{
+    font-family: "black-regular";
+    src: url(./black-regular/ArchivoBlack-Regular.ttf);
+    font-weight: 400;
+    font-size: normal;
+}
+
+@font-face{
+    font-family: "DM Sans";
+    src: url(./dmsans/DMSans-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "DM Sans";
+    src: url(./dmsans/DMSans-Medium.ttf) format('truetype');
+    font-weight: 500;
+}
+
+@font-face{
+    font-family: "DM Sans";
+    src: url(./DMSans-Bold.ttf) format('truetype');
+    font-weight: 700;
+}
