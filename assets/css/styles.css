@@ -68,13 +68,21 @@ body{
     flex-direction: row;
     justify-content: space-between;
     position: fixed;
-    top: env(safe-area-inset-top);
+    top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
     width: 100%;
     padding: 0rem 13rem;
+    transform: translateZ(0);
+    will-change: transform;
     background-color: var(--color-header-bg);
+}
+
+@supports (top: env(safe-area-inset-top)) {
+    .header__menu--fixed {
+        padding-top: env(safe-area-inset-top);
+    }
 }
 
 .header__logo{
