@@ -142,6 +142,11 @@
         display: none;
     }
 
+    .layout__projects{
+        background-position: center top;
+        background-attachment: scroll;
+    }
+
     .projects__project {
         display: flex;
         flex-direction: column;
@@ -261,5 +266,24 @@
 @media (max-width: 415px){
     .header__banner{
         width: 70%;
+    }
+
+    .projects__container, 
+    .reviews__container{
+        width: 88%;
+        padding: 6rem 0;
+    }
+
+    .projects__content {
+        padding: 0 1rem;
+        gap: 5rem;
+    }
+
+    .project__title{
+        font-size: 3.5rem;
+    }
+
+    .project__description{
+        font-size: 1.4rem;
     }
 }

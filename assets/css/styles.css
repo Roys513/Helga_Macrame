@@ -26,6 +26,8 @@ html{
 body{
     width: 100%;
     height: 100%;
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
     font-size: 1.6rem;
     font-family: "Dm Sans", sans-serif;
     font-weight: 400;
@@ -66,7 +68,7 @@ body{
     flex-direction: row;
     justify-content: space-between;
     position: fixed;
-    top: 0;
+    top: env(safe-area-inset-top);
     left: 0;
     right: 0;
     z-index: 1000;
@@ -547,9 +549,10 @@ body{
     position: relative;
     overflow: hidden;
     background-image: linear-gradient(var(--color-projects-bg), var(--color-projects-bg)), url(../img/Imagen\ 2d\ motivos.png);
-    background-position: center;
-    background-attachment: fixed;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 .projects__content{
