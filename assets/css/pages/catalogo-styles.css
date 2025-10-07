@@ -8,10 +8,11 @@
     --color6: #7D7C77;
     --color7: #f0ede0;
     --color-border: #dcd9cd;
-    --color-border-items: rgba(0, 0, 0, 10%);
     --color-header-bg: #a99e71;
+    --color-navbar-responsive-active:#918659;
     --color-logo-bg: #f7f2e6;
-    --color-about-bg: #292930ed;
+    --color-about-bg1: #2A2A30;
+    --color-about-bg2: #292930ed;
     --color-projects-bg: #fff5e6d2;
     --color-subtitle: #d9b969;
     --color-title: #de6361;
@@ -35,8 +36,8 @@ body{
 
 .layout{
     width: 100%;
-    min-width: 1200px;
     height: 100%;
+    overflow: hidden;
 }
 
 /*CABECERA*/
@@ -148,6 +149,76 @@ body{
     font-size: 10rem;
     color: var(--color4);
     font-family: "brusher";
+}
+
+/*MENU RESPONSIVE*/
+.header-navbar__responsive{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    z-index: 999;
+}
+
+.navbar-responsive__button{
+    display: none;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+.navbar-responsive__icon{
+    font-size: 2.4rem;
+}
+
+.navbar-responsive__button .fa-bars{
+    display: block;
+}
+
+.navbar-responsive__button .fa-x{
+    display: none;
+}
+
+.navbar-responsive__menu{
+    position: fixed;
+    top: 8rem;
+    left: 0%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 20rem;
+    z-index: 998;
+    transform: translateY(-190%);
+    transition: all 300ms ease-in-out;
+}
+
+.navbar-responsive__menu--active{
+    transform: translateY(0);
+}
+
+.navbar-responsive__menu--active-fixed{
+    transform: translateY(0%);
+}
+
+.navbar-responsive__list{
+    width: 100%;
+}
+
+.navbar-responsive__title{
+    border-bottom: 1px solid rgb(131, 122, 87);
+    background-color: var(--color-header-bg);
+}
+
+.navbar-responsive__title--active{
+    background-color: var(--color-navbar-responsive-active);
+}
+
+.navbar-resposive__link{
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 2rem 0;
 }
 
 /*CATALOGO*/

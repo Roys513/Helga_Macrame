@@ -2,16 +2,18 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <!-- FONTS -->
     <link rel="stylesheet" href="../fonts/fontawesome-free-6.1.2-web/css/all.min.css">
     <link rel="stylesheet" href="../fonts/fonts.css">
     <!-- STYLESHEETS -->
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/pages/catalogo-styles.css">
+    <link rel="stylesheet" href="../css/responsive/responsive-catalogo.css">
     <!-- DOCUMENTOS JS -->
     <script src="../js/script.js"></script>
     <script src="../js/navbarFixed.js"></script>
+    <script src="../js/menuResponsive.js"></script>
     <script src="../js/pages/catalogoContent.js"></script>
 
     <title>HELGA | MACRAME</title>
@@ -47,6 +49,12 @@
                     </ul>
 
                 </nav>
+
+                <!-- BOTONES MENU RESPONSIVE -->
+                <div class="navbar-responsive__button">
+                    <i class="navbar-responsive__icon fa-solid fa-bars"></i>
+                    <i class="navbar-responsive__icon fa-solid fa-x"></i>
+                </div>
             </header>
 
             <!-- BANNER -->
@@ -56,6 +64,26 @@
                 </div>
                 <h1 class="banner-catalog__title">Productos</h1>
             </div>
+
+            <!-- MENU RESPONSIVE -->
+            <nav class="header-navbar__responsive">            
+                <div class="navbar-responsive__menu">
+                    <ul class="navbar-responsive__list">
+                        <li class="navbar-responsive__title">
+                            <a href="../../index.html" class="navbar-resposive__link">Inicio</a>
+                        </li>
+                        <li class="navbar-responsive__title navbar-responsive__title--active">
+                            <a href="./catalogo.html" class="navbar-resposive__link">Catálogo</a>
+                        </li>
+                        <li class="navbar-responsive__title">
+                            <a href="./blog.html" class="navbar-resposive__link">Sobre mí</a>
+                        </li>
+                        <li class="navbar-responsive__title">
+                            <a href="./contacto.html" class="navbar-resposive__link">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </section>
 
         <!-- CATALOGO -->

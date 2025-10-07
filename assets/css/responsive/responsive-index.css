@@ -1,11 +1,11 @@
-    @media (min-width: 1500px){
+@media (min-width: 1500px){
         .navbar-responsive__button{
         display: none;
         }
-    }
+}
     
-    @media (max-width: 1500px){
-    .navbar-responsive__button{
+@media (max-width: 1500px){    
+        .navbar-responsive__button{
         display: none;
     }
 
@@ -100,12 +100,12 @@
     }
 
     .reviews__content{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding-top: 5rem;
-    gap: 3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-top: 5rem;
+        gap: 3rem;
     }
 }
 

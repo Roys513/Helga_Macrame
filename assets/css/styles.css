@@ -8,7 +8,7 @@
     --color6: #7D7C77;
     --color7: #f0ede0;
     --color-border: #dcd9cd;
-    --color-header-bg: #a99e71d6;
+    --color-header-bg: #a99e71;
     --color-navbar-responsive-active:#918659;
     --color-logo-bg: #f7f2e6;
     --color-about-bg1: #2A2A30;
@@ -74,15 +74,7 @@ body{
     z-index: 1000;
     width: 100%;
     padding: 0rem 13rem;
-    transform: translateZ(0);
-    will-change: transform;
     background-color: var(--color-header-bg);
-}
-
-@supports (top: env(safe-area-inset-top)) {
-    .header__menu--fixed {
-        padding-top: env(safe-area-inset-top);
-    }
 }
 
 .header__logo{
@@ -272,7 +264,6 @@ body{
 }
 
 .navbar-responsive__title{
-    padding: 2rem 0;
     border-bottom: 1px solid rgb(131, 122, 87);
     background-color: var(--color-header-bg);
 }
@@ -284,6 +275,7 @@ body{
 .navbar-resposive__link{
     text-transform: uppercase;
     font-weight: 500;
+    padding: 2rem 0;
 }
 
 /*SEPARADOR*/
