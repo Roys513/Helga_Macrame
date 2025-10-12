@@ -108,7 +108,7 @@
     }
 
     .catalog-item__container-img{
-        width: 15rem;
+        width: 16rem;
     }
 
     .catalog-item__info-item{
@@ -178,6 +178,10 @@
 @media (max-width: 575px){
     .footer-up__content{
         flex-direction: column;
+    }
+
+    .footer-up__phrase-text {
+        font-size: 2.5rem;
     }
 
     .footer-up__contact{

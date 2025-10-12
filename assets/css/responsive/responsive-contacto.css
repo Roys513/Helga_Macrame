@@ -2,9 +2,26 @@
     .header-navbar{
         display: none;
     }
-
+    
     .navbar-responsive__button{
         display: flex;
+    }
+}
+
+@media (max-width: 785px){
+    .header__menu{
+        padding: 2rem 4rem;
+    }
+
+    .menu__filter{
+        margin-right: 3rem;
+    }
+    
+    .banner-catalog__title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
 
@@ -29,6 +46,7 @@
     .contact__right{
         text-align: center;
         margin-top: 3rem;
+        width: 100%;
     }
 
     .contact__rsocial{
@@ -46,32 +64,31 @@
     }
 }
 
-@media (max-width: 785px){
-    .header__menu{
-        padding: 2rem 4rem;
-    }
-
-    .menu__filter{
-        margin-right: 3rem;
-    }
-    
-    .banner-catalog__title {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-}
-
 @media (max-width: 575px){
     .footer-up__content{
         flex-direction: column;
+    }
+
+    .footer-up__phrase-text {
+        font-size: 2.5rem;
     }
 
     .footer-up__contact{
         border: 0;
         padding: 0;
         align-self: center;
+    }
+
+    .contact__left{
+        width: 100%;
+    }
+
+    .more-info__email{
+        font-size: 1.4rem;
+    }
+
+    .more-info__address{
+        font-size: 1rem;
     }
 
     .contact__contact-info{

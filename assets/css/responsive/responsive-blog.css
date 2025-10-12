@@ -139,6 +139,10 @@
         flex-direction: column;
     }
 
+    .footer-up__phrase-text {
+        font-size: 2.5rem;
+    }
+
     .footer-up__contact{
         border: 0;
         padding: 0;
