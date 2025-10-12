@@ -339,7 +339,11 @@
     <script src="./assets/js/loader.js"></script>
     <script src="./node_modules/aos/dist/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            duration: 1000,
+            once: true,
+            disable: false,
+        });
     </script>
 </body>
 </html>
