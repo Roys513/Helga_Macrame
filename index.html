@@ -7,16 +7,28 @@
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css">
     <link rel="stylesheet" href="./assets/fonts/fonts.css">
     <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="./node_modules/aos/dist/aos.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/css/responsive/responsive-index.css">
+    <link rel="stylesheet" href="./assets/css/spinner.css">
     <!-- DOCUMENTOS JS -->
-    <script src="./assets/js/script.js"></script>
-    <script src="./assets/js/navbarFixed.js"></script>
-    <script src="./assets/js/menuResponsive.js"></script>
+    <script src="./assets/js/script.js" defer></script>
+    <script src="./assets/js/navbarFixed.js" defer></script>
+    <script src="./assets/js/menuResponsive.js" defer></script>
     <title>HELGA | MACRAME</title>
 </head>
+
+
 <body>
+    <!-- SPINNER -->
+    <div id="loader">
+        <div class="loader__circle"></div>
+        <div class="loader__container-img">
+            <img src="./assets/img/fr_17311.jpg" alt="Logo Helga" class="loader__img">
+        </div>
+    </div>
+    
     <!-- LAYOUT PRINCIPAL -->
     <div class="layout">
         <!-- MENU -->
@@ -39,10 +51,10 @@
                             <a href="./assets/pages/catalogo.html" class="navbar__link">Catálogo</a>
                         </li>
                         <li class="navbar__title">
-                            <a href="./blog.html" class="navbar__link">Sobre mí</a>
+                            <a href="./assets/pages/blog.html" class="navbar__link">Sobre mí</a>
                         </li>
                         <li class="navbar__title">
-                            <a href="./contacto.html" class="navbar__link">Contacto</a>
+                            <a href="./assets/pages/contacto.html" class="navbar__link">Contacto</a>
                         </li>
                     </ul>
                 </nav>
@@ -52,16 +64,16 @@
                     <i class="navbar-responsive__icon fa-solid fa-x"></i>
                 </div>
             </header>
-            
+
             <!-- BANNER -->
             <div class="header__banner">
-                <div class="banner__title">
+                <div class="banner__title animate__animated animate__fadeIn">
                     <span class="banner__title1">Macramé con</span>
                     <span class="banner__title2">alma</span>
                     <span class="banner__title3">VIKINGA</span>
                 </div>
-                <div class="banner__button">
-                    <a href="./assets/pages/catalogo.html" class="banner__button-link">Ver Catálogo</a>
+                <div class="banner__button animate__animated animate__fadeInDown">
+                    <a href="./assets/pages/catalogo.html" class="banner__button-link">Ver Catálogo<i class="fa-solid fa-arrow-alt-circle-right"></i></a>
                 </div>
             </div>
             
@@ -105,14 +117,12 @@
                     </ul>
                 </div>
             </nav>
-        </section>
-
-        
+        </section>     
         <!-- QUIENES SOMOS -->
         <section class="layout__about">            
             <div class="about__container">
                 
-                <div class="about__content-left">
+                <div class="about__content-left" data-aos="fade-right">
                     <div class="about__header">
                         <h4 class="about__subtitle">Helga Macramé</h4>
                         <h2 class="about__title">Todos los proyectos empiezan con una visión...</h2>
@@ -120,15 +130,16 @@
 
                         <div class="about__container-link">
                             <a href="./assets/pages/blog.html" class="about__link">Sobre mí</a>
+                            <i class="fa-solid fa-arrow-right-long"></i>
                         </div>
                     </div>
                     
-                    <div class="about__container-img about__container-img--1">
+                    <div class="about__container-img about__container-img--1"  data-aos="fade-up">
                         <img src="./assets/img/fr_17314.jpg" alt="Imagen trabajador" class="about__img">
                     </div>
                 </div>
                 
-                <div class="about__content-right">
+                <div class="about__content-right" data-aos="fade-up" data-aos-delay="200">
                     <div class="about__container-img about__container-img--2">
                         <img src="./assets/img/fr_17314.jpg" alt="Imagen trabajador" class="about__img">
                     </div>                    
@@ -184,7 +195,7 @@
         <section class="layout__projects">
 
             <div class="projects__container">
-                <header class="projects__header">
+                <header class="projects__header" data-aos="fade-right">
                     <h4 class="projects__subtitle">Nuestros proyectos</h4>
                     <h2 class="projects__title">Últimos trabajos</h2>
                 </header>
@@ -198,21 +209,31 @@
                         <div class="project__text">
                             <h4 class="project__title">Bolso conchita</h4>
                             <p class="project__description">Bolso hecho a mano con técnica de macramé. Es diferente y, ¡seguro que te complementa con un look ideal! para un evento, una fiesta o un regalo para alguien especial. Personaliza el color y regala algo único ya que cada bolso se hace bajo previa petición del cliente</p>
+
+                            <div class="project__options">
+                                <a href="#" class="project__option project__option--red">¡Lo quiero!</a>
+                                <a href="./assets/pages/catalogo.html" class="project__option">Ver más productos</a>
+                            </div>
                         </div>
-                    
+                        
                         <div class="project__forma"></div>
                     </article>
-
+                    
                     <article class="projects__project projects__project--right">
                         <div class="project__img-container project__img-container--right">
                             <img src="./assets/img/Macrame_novios.jpg" alt="Imagen macrame bolso" class="project__img">
                         </div>
-
+                        
                         <div class="project__text project__text--right">
                             <h4 class="project__title project__title--right">Novios</h4>
                             <p class="project__description project__description--right">Se puede personalizar todo: desde el color de la ropita hasta la forma y el tamaño del marco. Se hace bajo petición, lo que los hace únicos y hechos con mucho cariño</p>
+                            
+                            <div class="project__options project__options--right">
+                                <a href="#" class="project__option project__option--red">¡Lo quiero!</a>
+                                <a href="./assets/pages/catalogo.html" class="project__option">Ver más productos</a>
+                            </div>
                         </div>
-
+                        
                         <div class="project__forma project__forma--right"></div>
                     </article>
                 </div>
@@ -221,14 +242,14 @@
         <!-- REVIEWS -->
         <section class="layout__reviews">
             <div class="reviews__container">
-                <header class="reviews__header">
+                <header class="reviews__header" data-aos="fade-right">
                     <h4 class="reviews__subtitle">Reseñas</h4>
                     <h2 class="reviews__title">¿Qué dicen nuestros clientes?</h2>
                 </header>
 
                 <div class="reviews__content">
-                    <article class="reviews__review">
-                        <div class="review__img-container">
+                    <article class="reviews__review" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100" data-aos-offset="0">
+                        <div class="review__img-container review__img-container--shape1">
                             <img src="./assets/img/imagen_review_01.jpg" alt="Imagen de review" class="review__img">
                         </div>
 
@@ -240,8 +261,8 @@
                         </div>
                     </article>
 
-                    <article class="reviews__review">
-                        <div class="review__img-container">
+                    <article class="reviews__review" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="200" data-aos-offset="0">
+                        <div class="review__img-container review__img-container--shape2">
                             <img src="./assets/img/imagen_review_01.jpg" alt="Imagen de review" class="review__img">
                         </div>
 
@@ -253,8 +274,8 @@
                         </div>
                     </article>
 
-                    <article class="reviews__review">
-                        <div class="review__img-container">
+                    <article class="reviews__review" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+                        <div class="review__img-container review__img-container--shape3">
                             <img src="./assets/img/imagen_review_01.jpg" alt="Imagen de review" class="review__img">
                         </div>
 
@@ -314,5 +335,11 @@
             </div>
         </footer>
     </div>
+
+    <script src="./assets/js/loader.js"></script>
+    <script src="./node_modules/aos/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

@@ -7,18 +7,28 @@
     <link rel="stylesheet" href="../fonts/fontawesome-free-6.1.2-web/css/all.min.css">
     <link rel="stylesheet" href="../fonts/fonts.css">
     <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="../../node_modules/aos/dist/aos.css">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/pages/catalogo-styles.css">
     <link rel="stylesheet" href="../css/responsive/responsive-catalogo.css">
+    <link rel="stylesheet" href="../css/spinner.css">
     <!-- DOCUMENTOS JS -->
     <script src="../js/script.js"></script>
     <script src="../js/navbarFixed.js"></script>
     <script src="../js/menuResponsive.js"></script>
     <script src="../js/pages/catalogoContent.js"></script>
 
-    <title>HELGA | MACRAME</title>
+    <title>HELGA | MACRAME - Catálogo</title>
 </head>
 <body>
+    <!-- SPINNER -->
+    <div id="loader">
+        <div class="loader__circle"></div>
+        <div class="loader__container-img">
+            <img src="../img/fr_17311.jpg" alt="Logo Helga" class="loader__img">
+        </div>
+    </div>
+
     <!-- LAYOUT PRINCIPAL -->
     <div class="layout">
         <!-- MENU -->
@@ -41,7 +51,7 @@
                             <a href="./catalogo.html" class="navbar__link navbar__link--active">Productos</a>
                         </li>
                         <li class="navbar__title">
-                            <a href="./blog.html" class="navbar__link">Blog</a>
+                            <a href="./blog.html" class="navbar__link">Sobre mí</a>
                         </li>
                         <li class="navbar__title">
                             <a href="./contacto.html" class="navbar__link">Contacto</a>
@@ -112,7 +122,7 @@
                 </div>
                 
                 <!-- CONTENIDO DE CATALOGO -->
-                <div class="catalog__content">
+                <div class="catalog__content" data-aos="fade-up">
                 </div>
                 
                 <div class="content__item-detail">
@@ -166,5 +176,11 @@
             </div>
         </footer>
     </div>
+
+    <script src="../js/loader.js"></script>
+    <script src="../../node_modules/aos/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

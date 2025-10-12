@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <!-- FONTS -->
+    <link rel="stylesheet" href="../fonts/fontawesome-free-6.1.2-web/css/all.min.css">
+    <link rel="stylesheet" href="../fonts/fonts.css">
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/pages/contacto-styles.css">
+    <link rel="stylesheet" href="../css/responsive/responsive-contacto.css">
+    <link rel="stylesheet" href="../css/spinner.css">
+    <!-- DOCUMENTOS JS -->
+    <script src="../js/script.js"></script>
+    <script src="../js/menuResponsive.js"></script>
+    <script src="../js/pages/contactoContent.js"></script>
+
+    <title>HELGA | MACRAME - Contacto</title>
+</head>
+<body>
+    <!-- SPINNER -->
+    <div id="loader">
+        <div class="loader__circle"></div>
+        <div class="loader__container-img">
+            <img src="../img/fr_17311.jpg" alt="Logo Helga" class="loader__img">
+        </div>
+    </div>
+
+    <!-- LAYOUT PRINCIPAL -->
+    <div class="layout">
+        <!-- MENU -->
+        <section class="layout__header">
+            <header class="header__menu">
+                <!-- LOGO -->
+                <div class="header__logo">
+                    <a href="../../index.html" class="header__link-logo">
+                        <img src="../img/fr_17311.jpg" alt="imagen_logo" class="header__img">
+                    </a>
+                </div>
+                
+                <!-- NAVEGACION -->
+                <nav class="header-navbar">
+                    <ul class="navbar__list">
+                        <li class="navbar__title">
+                            <a href="../../index.html" class="navbar__link">Inicio</a>
+                        </li>
+                        <li class="navbar__title">
+                            <a href="./catalogo.html" class="navbar__link">Productos</a>
+                        </li>
+                        <li class="navbar__title">
+                            <a href="./blog.html" class="navbar__link">Sobre mí</a>
+                        </li>
+                        <li class="navbar__title">
+                            <a href="./contacto.html" class="navbar__link navbar__link--active">Contacto</a>
+                        </li>
+                    </ul>
+
+                </nav>
+
+                <!-- BOTONES MENU RESPONSIVE -->
+                <div class="navbar-responsive__button">
+                    <i class="navbar-responsive__icon fa-solid fa-bars"></i>
+                    <i class="navbar-responsive__icon fa-solid fa-x"></i>
+                </div>
+            </header>
+
+            <!-- BANNER -->
+            <div class="header__banner-catalog">
+                <div class="banner-catalog__container-img">
+                    <img src="../img/imagen-fondo-muestra-catalogo.jpg" alt="Imagen muestra catalogo" class="banner-catalog__img">
+                </div>
+                <h1 class="banner-catalog__title">Contacto</h1>
+            </div>
+
+            <!-- MENU RESPONSIVE -->
+            <nav class="header-navbar__responsive">            
+                <div class="navbar-responsive__menu">
+                    <ul class="navbar-responsive__list">
+                        <li class="navbar-responsive__title">
+                            <a href="../../index.html" class="navbar-resposive__link">Inicio</a>
+                        </li>
+                        <li class="navbar-responsive__title">
+                            <a href="./catalogo.html" class="navbar-resposive__link">Catálogo</a>
+                        </li>
+                        <li class="navbar-responsive__title">
+                            <a href="./blog.html" class="navbar-resposive__link">Sobre mí</a>
+                        </li>
+                        <li class="navbar-responsive__title">
+                            <a href="./contacto.html" class="navbar-resposive__link navbar-responsive__title--active">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+
+                    
+        <!-- CONTENIDO CONTACTO -->
+        <section class="layout__contact">
+            <div class="contact__grid">
+                <div class="contact__left">
+                    <form action="https://formsubmit.co/b0051dae99a07797e9dbb4590bc17248" class="contact__form" method="POST">
+                    
+                    <div class="form__group">
+                        <input type="text" name="nombre" class="form__input" id="nombre" placeholder="">
+                        <label for="nombre" class="form__label">Tu nombre</label>
+                    </div>
+                    
+                    <div class="form__group">
+                        <input type="email" name="email" class="form__input" id="email" placeholder="">
+                        <label for="email" class="form__label">Tu email</label>
+                    </div>
+                        
+                    <div class="form__group">
+                        <textarea name="mensaje" class="form__input" id="mensaje" rows="5" placeholder=""></textarea>
+                        <label for="mensaje" class="form__label">Escribe tu mensaje</label>
+                    </div>
+                                    
+                    <button type="submit" class="form__btn">Enviar mensaje</button>
+
+                    <span class="form__mensaje-submmit" id="mensajeExito">Enviando...</span>
+                    <span class="form__mensaje-error" id="mensajeError"></span>
+
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/assets/pages/contacto.html">
+                    <input type="hidden" name="_captcha" value="false">
+                    </form>
+                </div>
+
+                <div class="contact__right">
+                    <div class="contact__rsocial">
+                        <a href="#" class="rsocial__link">
+                            <i class="rsocial__logo fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" class="rsocial__link">
+                            <i class="rsocial__logo fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+
+                    <div class="contact__more-info">
+                        <span class="more-info__email">helga@helga.com</span>
+                        <span class="more-info__address">San Pedro del Pinatar</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <!-- FOOTER -->
+        <footer class="layout__footer">
+            <div class="footer__container">
+                <div class="footer__footer-up">
+                    <div class="footer-up__phrase-container">
+                        <p class="footer-up__phrase-text">Gracias por apoyar lo hecho a mano</p>
+                    </div>
+
+                    <section class="footer-up__content">
+
+                        <section class="footer-up__contact">
+                            <div class="contact__contact-info">
+                                <h2 class="contact-info__name">Helga Macramé</h2>
+                                <span class="contact-info__email">helgamacrame@gmail.com</span>
+                            </div>
+                            
+                            <div class="contact__social">
+                                <a href="#" class="social__link">
+                                    <i class="social__instagram fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="#" class="social__link">
+                                    <i class="social__whatsapp fa-brands fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </section>
+                        
+                        <section class="footer-up__credits">
+                            <div class="credits__logo-container">
+                                <img src="../img/fr_17311.jpg" alt="Logo" class="credits__logo-img">
+                            </div>
+                            
+                            <div class="credits__location">
+                                <h2 class="location__prev">Productos elaborados en:</h2>
+                                <span class="location__content">San Pedro del Pinatar - Murcia <br> 30740</span>
+                            </div>
+                        </section>
+                    </section>
+                </div>
+                <div class="footer__footer-bottom">
+                    <span class="footer-bottom__copyright-text">
+                        &copy; 2025 Todos los derechos reservados a <a href="#">Roy Ortiz</a>
+                    </span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../js/loader.js"></script>
+</body>
+</html>

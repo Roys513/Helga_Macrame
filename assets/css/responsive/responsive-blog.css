@@ -1,0 +1,194 @@
+@media (max-width: 1480px){
+    .about-me__grid{
+        flex-direction: column;
+        align-items: center;
+        height: 146rem;
+    }
+
+    .about-me__left{
+        width: 76rem;
+        margin-bottom: 2rem;
+    }
+
+    .about-me__title {
+        width: 36rem;
+    }
+    
+    .about-me__right{
+        width: 84rem;
+    }
+
+    .about-me__itext-container{
+        bottom: -60rem;
+        right: -0.6rem;
+    }
+}
+
+@media (max-width: 950px){
+    .header-navbar{
+        display: none;
+    }
+
+    .navbar-responsive__button{
+        display: flex;
+    }
+
+    .content__catalog-item{
+        width: 28rem;
+    }
+
+    .about-me__grid {
+        height: 138rem;
+    }
+
+    .about-me__left{
+        width: 100%;
+    }
+
+    .about-me__container-img-left{
+        top: 25rem;
+        left: 13rem;
+        width: 39rem;
+    }
+
+    .about-me__container-img-right{
+        top: 2rem;
+        right: 12rem;
+        width: 30rem;
+        height: 30rem;
+    }
+
+    .about-me__itext-container{
+        bottom: -17rem;
+        right: 47.4rem;
+    }
+}
+
+@media (max-width: 785px){
+    .header__menu{
+        padding: 2rem 4rem;
+    }
+}
+
+@media (max-width: 750px){
+    .banner-catalog__title{
+        transform: translate(-50%, -50%);
+        font-size: 7rem;
+    }
+
+    .about-me__grid {
+        height: 144rem;
+    }
+
+    .about-me__left{
+        margin-right: 0rem;
+    }
+
+    .about-me__right{
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .about-me__container-img-left{
+        position: static;
+        width: 60%;
+        height: 33rem;
+    }
+    
+    .about-me__container-img-right{
+        position: static;
+        width: 60%;
+        height: 33rem;
+        margin-bottom: 14rem;
+    }
+
+    .about-me__itext-container {
+        bottom: 37rem;
+        right: 31.4rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 575px){
+    .about-me__grid{
+        height: 139rem;
+    }
+
+    .about-me__title {
+        width: 100%;
+    }
+
+    .about-me__container-img-left{
+        width: 42%;
+        height: 26rem;
+    }
+
+    .about-me__container-img-right{
+        width: 42%;
+        height: 25rem;
+    }
+
+    .about-me__itext-container{
+        bottom: 30rem;
+        right: 31.4rem;
+    }
+
+    .footer-up__content{
+        flex-direction: column;
+    }
+
+    .footer-up__contact{
+        border: 0;
+        padding: 0;
+        align-self: center;
+    }
+
+    .contact__contact-info{
+        text-align: center;
+    }
+
+    .contact__social{
+        margin: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 495px){
+    .about-me__grid {
+        height: 153rem;
+    }
+
+    .banner-catalog__title{
+        font-size: 4.8rem;
+    }
+
+    .about-me__grid{
+        height: 155rem;
+    }
+
+    .about-me__container-img-left{
+        width: 33%;
+        height: 26rem;
+    }
+
+    .about-me__container-img-right{
+        width: 33%;
+        height: 25rem;
+    }
+}
+
+@media (max-width: 490px){
+    .about-me__grid {
+        height: 144rem;
+    }
+}
+
+@media (max-width: 370px){
+    .about-me__grid {
+        height: 153rem;
+    }
+}

@@ -65,6 +65,7 @@
     .catalog__content {
         justify-content: center;
     }
+}
 
 @media (max-width: 950px){
     .header-navbar{
@@ -78,7 +79,6 @@
     .content__catalog-item {
         width: 28rem;
     }
-    }
 }
 
 @media (max-width: 785px){
@@ -89,6 +89,7 @@
     .menu__filter{
         margin-right: 3rem;
     }
+    
     .banner-catalog__title {
         position: absolute;
         top: 50%;

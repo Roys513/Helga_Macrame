@@ -1,3 +1,5 @@
+@import url(../../node_modules/animate.css/animate.min.css);
+
 :root{
     --max-width: 1400px;
     --color1: #556B2F;
@@ -169,19 +171,40 @@ body{
     justify-content: center;
     width: 100%;
     margin-top: 2rem;
+    overflow: hidden;
 }
 
 .banner__button-link{
-    padding: 1rem 2rem;
-    background-color: var(--color-title);
+    width: 13.7rem;
+    padding: 1rem 0;
+    padding-left: 2rem;
     color: var(--color-border);
+    overflow: hidden;
+    background-color: var(--color-title);
+    transition: all 300ms ease;
+}
+
+.banner__button-link > i{
+    display: inline-block;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(3rem);
+    margin-left: 0.5rem;
     transition: all 300ms ease;
 }
 
 .banner__button-link:hover{
+    padding-left: 1rem;
     background-color: var(--color-border);
-    color: var(--color-title);
-    border: 1px solid var(--color-title);
+    color: var(--color1);
+    border: 1px solid var(--color1);
+}
+
+.banner__button-link:hover > i{
+    display: inline-block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
 }
 
 .banner__title1,
@@ -206,6 +229,10 @@ body{
 .banner__title3{
     font-family: "brusher";
     font-size: 8rem;
+}
+
+.page-loaded .animate__animated {
+    visibility: visible;
 }
 
 /*MENU RESPONSIVE*/
@@ -441,9 +468,10 @@ body{
 .projects__title,
 .reviews__title{
     z-index: 1000;
-    font-size: 4rem;
+    font-size: 3.5rem;
+    font-weight: 400;
     margin-bottom: 2rem;
-    color: var(--color-title);
+    color: var(--color-navbar-responsive-active);
 }
 
 .about__header-text{
@@ -453,7 +481,9 @@ body{
 }
 
 .about__container-link{
-    display: flex;
+    position: relative;
+    z-index: 0;
+    display: inline-block;
     justify-content: left;   
     margin-bottom: 3rem;
     margin-right: 3rem;
@@ -462,14 +492,46 @@ body{
 .about__link{
     padding: 1rem 2rem;
     border: 1px solid var(--color-header-bg);
-    border-radius: 5px;
+    border-radius: 40px;
     color: var(--color4);
     background-color: transparent;
     transition: all 300ms ease;
+    animation: chase 2000ms infinite;
 }
 
-.about__link:hover{
-    background-color: var(--color-header-bg);
+@keyframes chase {
+    0%{
+        background-color: var(--color-font);
+    }
+
+    50%{
+        background-color: var(--color-header-bg);
+    }
+
+    100%{
+        background-color: var(--color-font);
+    }
+}
+
+.about__container-link > i{
+    position: absolute;
+    z-index: -1;
+    left: 70%;
+    top: 0;
+    display: inline-block;
+    opacity: 0;
+    visibility: hidden;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: var(--color-header-bg);
+    transition: all 300ms ease;
+}
+
+.about__container-link:hover > i{
+    left: 105%;
+    top: 0;
+    opacity: 1;
+    visibility: visible;
 }
 
 .about__content-left{
@@ -489,7 +551,9 @@ body{
 .about__container-img{
     width: 100%;
     height: 63%;
+    border-radius: 2px;
     overflow: hidden;
+    box-shadow: 0 8px 20px rgba(117, 117, 117, 0.1);
 }
 
 .about__img{
@@ -500,6 +564,7 @@ body{
 .images-shapes__container{
     display: flex;
     opacity: 0.5;
+    z-index: -2;
 }
 
 .images-shapes__item--shape1{
@@ -511,7 +576,7 @@ body{
 
 .images-shapes__item--shape2{
     position: absolute;
-    top: 70%;;
+    top: 70%;
 }
 
 .images-shapes__item--shape3{
@@ -570,6 +635,18 @@ body{
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    transition: all 300ms ease;
+}
+
+.projects__project:hover{
+    border: 0.5px solid rgba(0, 0, 0, 0.05);
+    transform: translateY(-2rem);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+}
+
+.projects__project:hover > .project__text{
+    background-color: transparent;
+    backdrop-filter: blur(5px);
 }
 
 .projects__project--right{
@@ -591,24 +668,25 @@ body{
     object-fit: cover;
 }
 
-.project__text{
-    display: block;
+.project__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 70%;
+    height: 40rem;
     padding: 3rem;
     padding-right: 10rem;
     text-align: end;
+    transition: all 300ms ease;
 }
 
 .project__text--right{
-    display: block;
     padding: 3rem;
     padding-right: 10rem;
-    text-align: end;
 }
 
 .project__title{
     padding-left: 30%;
-    margin-bottom: 3rem;
     text-align: left;
     font-family: "brusher";
     font-size: 5rem;
@@ -622,6 +700,7 @@ body{
 
 .project__description{
     padding-left: 30%;
+    margin-top: -7rem;
     text-align: justify;
     line-height: 1.8;
 }
@@ -632,6 +711,51 @@ body{
     text-align: justify;
     line-height: 1.8;
 }
+
+.project__options{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    opacity: 0;
+    visibility: hidden;
+    gap: 2rem;
+    transition: all 300ms ease;
+}
+
+.projects__project:hover .project__options{
+    opacity: 1;
+    visibility: visible;
+}
+
+.project__option{
+    padding: 1rem 2rem;
+    border-radius: 3px;
+    background-color: var(--color-header-bg);
+    color: var(--color4);
+    transition: all 200ms ease-in-out;
+}
+
+.project__option:hover{
+    background-color: var(--color-subtitle);
+    color: var(--color4);
+}
+
+
+.project__option--red{
+    padding: 1rem 2rem;
+    border-radius: 3px;
+    background-color: var(--color-title);
+    color: var(--color4);
+}
+
+.project__options--right{
+    display: flex;
+    flex-direction: row;
+    margin-left: 9rem;
+    justify-content: start;
+    gap: 2rem;
+}
+
 
 .project__forma{
     position: absolute;
@@ -657,6 +781,11 @@ body{
     background-size: cover;
 }
 
+.reviews__title{
+    font-size: 4rem;
+    color: var(--color4);
+}
+
 .reviews__content{
     display: flex;
     flex-direction: row;
@@ -673,10 +802,65 @@ body{
 .review__img-container{
     margin: 0 auto;
     margin-bottom: 5rem;
-    width: 20rem;
-    height: 20rem;
-    border-radius: 100px;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 150px;
+    box-shadow: 0 1px 28px 4px rgba(0, 0, 0, 0.10);
     overflow: hidden;
+}
+
+.review__img-container--shape1{    
+    animation: float1 10s infinite;
+}
+
+.review__img-container--shape2{    
+    animation: float2 9s infinite;
+}
+
+.review__img-container--shape3{    
+    animation: float3 8s infinite;
+}
+
+@keyframes float1 {
+    0%{
+        transform: translateY(0);
+    }
+    
+    50%{
+        transform: translateY(-1rem);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes float2 {
+    0%{
+        transform: translateY(0);
+    }
+    
+    50%{
+        transform: translateY(2rem);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes float3 {
+    0%{
+        transform: translateY(0);
+    }
+    
+    50%{
+        transform: translateY(-2rem);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
 }
 
 .review__img{
