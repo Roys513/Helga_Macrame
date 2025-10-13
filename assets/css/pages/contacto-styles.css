@@ -153,7 +153,6 @@ body{
 
 /*MENU RESPONSIVE*/
 .header-navbar__responsive{
-    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: end;
@@ -181,7 +180,7 @@ body{
 }
 
 .navbar-responsive__menu{
-    position: fixed;
+    position: absolute;
     top: 8rem;
     left: 0%;
     display: flex;
